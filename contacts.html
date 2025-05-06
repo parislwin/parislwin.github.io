@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--Contacts Page-->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Contacts Page</title>
+  <link rel="stylesheet" href="css/my_style.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="header">
+    <div class="hamburger" onclick="toggleMenu()"> ☰ Menu</div>
+    <nav id="navMenu" class="nav-menu">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main Content Area -->
+  <main class="contact-container">
+    <!-- Picture Box -->
+    <div class="contact-image-box">
+      <img src="images/photo_of_me.jpg" alt="Photo of Me" class="contact-image" />
+    </div>
+
+    <!-- Info Box -->
+    <div class="contact-info-box">
+      <h2>Contact Me</h2>
+      <hr>
+      <br>
+      <p><b>Email:</b> paristlwin@gmail.com</p>
+      <p><b>Phone:</b> (301) 524-7319</p>
+      <p><b>Location:</b> Frederick, MD</p>
+      <p><i>Feel free to reach out anytime!</i></p>
+    </div>
+  </main>
+
+    <!--Footer-->
+    <footer class="footer">
+        <p><em>Created by Paris Lwin. Last updated 04/10/2025</em></p>
+      </footer>
+    </body>
+
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('navMenu');
+      menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
+    }
+  </script>
+</body>
+</html>
