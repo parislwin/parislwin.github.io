@@ -8,9 +8,20 @@
 </head>
 <body class = "hobbies-page">
 
-  <header>
-    <h1>Hobbies & Interests</h1>
-  </header>
+    <!-- Top Bar -->
+    <header class="top-bar">
+      <button class="nav-toggle">&#9776; Menu</button>
+      <h1 class="page-title">Hobbies & Interests</h1>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="info.html">My Background</a></li>
+          <li><a href="hobbies.html">Hobbies & Interests</a></li>
+          <li><a href="projects.html">Projects & Achievements</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+      </nav>    
+    </header>
 
   <main class="hobbies-content">
 
@@ -31,8 +42,8 @@
         <img src="your-image-2.png" alt="Hobby image" />
       </div>
       <div class="hobby-description">
-        <h2>Gaming</h2>
-        <p>Playing story-driven games inspires me to explore narrative design and character development in tech-driven spaces.</p>
+        <h2>Skateboarding</h2>
+        <p>Skateboarding has always been one of my dreams as a little kid. Growing up, I wasn’t allowed to own or ride one because my parents feared that I might get severely hurt. In exchange, I requested a bike and scooter, and I’ve loved them since. Recently, I had saved enough money to buy a starter board. It is an Element board with the standard wheels, and it was hard to ride on at first because of the sensitive wheels and not being able to find a flat enough surface. But eventually, I got the hang of it and was able to buy a standard board, which is my Girl board with softer wheels for the main purpose of travelling. </p>
       </div>
     </section>
 
@@ -42,15 +53,26 @@
         <img src="your-image-3.png" alt="Hobby image" />
       </div>
       <div class="hobby-description">
-        <h2>Cybersecurity Challenges</h2>
-        <p>I participate in capture-the-flag (CTF) competitions, which test my skills in real-time problem solving and ethical hacking.</p>
+        <h2>Instruments: Violinist & Guitarist</h2>
+        <p>I’ve had five years of experience with the violin, starting from when I was learning in fifth grade during school. I’ve always loved string instruments and the way you can manipulate them around anyway you want to create a specific sound. A fun fact about violins is that it is the closest instrument you can get to a human singing voice. The guitar is an instrument I started learning a year ago. I currently own a Fender Stratocaster, which I’ve been advised is a great starter guitar. I’ve been able to play songs such as TV by Billie Eilish.</p>
+      </div>
+    </section>
+
+    <!-- Hobby 4 -->
+    <section class="hobby-section">
+      <div class="hobby-image">
+        <img src="your-image-3.png" alt="Hobby image" />
+      </div>
+      <div class="hobby-description">
+        <h2>Reading & Drawing</h2>
+        <p>I’ve combined these two into one because I’ve always had a knack for drawing when I was younger. I used to create really cool projects that eventually got to be displayed in showcases in school. I haven’t been able to draw in what seems like years, so I have recently been trying to get back into it. I was motivated by the manga and books I’ve read when I saw characters and scenes that were drawn in such great detail, and I wanted to recreate my own things.</p>
       </div>
     </section>
 
     <!-- Other Hobbies -->
     <section class="other-hobbies">
       <h2>Other Hobbies</h2>
-      <p>I also enjoy journaling, watching documentaries about science and history, and taking long walks to reset my mind.</p>
+      <p>I also enjoy learning how to code in my free time, playing video games, and watching drama/mystery shows.</p>
     </section>
 
   </main>
@@ -59,6 +81,14 @@
     <p>© 2025 Your Name. All rights reserved.</p>
   </footer>
 
+  <script>
+    const toggleButton = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+  
+    toggleButton.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>
 

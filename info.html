@@ -9,10 +9,20 @@
 </head>
 <body>
 
-  <header>
-    <h1>My Background</h1>
-    <p>Learn more about my journey in cybersecurity and computer science.</p>
-  </header>
+    <!-- Top Bar -->
+    <header class="top-bar">
+      <button class="nav-toggle">&#9776; Menu</button>
+      <h1 class="page-title">My Background</h1>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="info.html">My Background</a></li>
+          <li><a href="hobbies.html">Hobbies & Interests</a></li>
+          <li><a href="projects.html">Projects & Achievements</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+      </nav>    
+    </header>
 
   <div class="background-content">
 
@@ -47,10 +57,14 @@
         <img src="your-image-2.png" alt="Cybersecurity workshop" />
       </div>
       <div class="info-text left">
-        <h3>Cybersecurity Workshops</h3>
+        <h3>Fun Facts</h3>
         <p>
-          I participated in several cybersecurity competitions and workshops. 
-          These experiences sharpened my skills in threat detection, ethical hacking, and digital forensics.
+          <ul>
+              <li>I am bilingual: I can speak <i>English</i> and <i>Burmese.</i></li>
+              <li>I am 21 years old.</li>
+              <li>My astrology sign is Libra.</li>
+              <li>I absolutely <i>love</i> cats.</li>
+          </ul>
         </p>
       </div>
     </section>
@@ -76,5 +90,13 @@
     <p>© 2025 Your Name. All rights reserved.</p>
   </footer>
 
+  <script>
+    const toggleButton = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+  
+    toggleButton.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>

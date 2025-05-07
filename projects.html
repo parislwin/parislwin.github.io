@@ -8,11 +8,20 @@
   <link rel="stylesheet" href="css/my_style.css" />
 </head>
 <body class = "projects-page">
-  <!-- Top Bar -->
-  <header class="top-bar">
-    <button class="nav-toggle">&#9776; Menu</button>
-    <h1 class="page-title">Projects & Achievements</h1>
-  </header>
+    <!-- Top Bar -->
+    <header class="top-bar">
+      <button class="nav-toggle">&#9776; Menu</button>
+      <h1 class="page-title">Projects & Acheivements</h1>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="info.html">My Background</a></li>
+          <li><a href="hobbies.html">Hobbies & Interests</a></li>
+          <li><a href="projects.html">Projects & Achievements</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+      </nav>    
+    </header>
 
   <!-- Main Content -->
   <main class="main-content">
@@ -49,5 +58,14 @@
   <footer class="footer">
     <p><em>Created by Paris Lwin. Last updated 04/10/2025</em></p>
   </footer>
+
+  <script>
+    const toggleButton = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+  
+    toggleButton.addEventListener('click', () => {
+      navMenu.classList.toggle('active');
+    });
+  </script>
 </body>
 </html>

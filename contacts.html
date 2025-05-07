@@ -9,15 +9,20 @@
 </head>
 <body>
 
-  <!-- Navigation -->
-  <header class="header">
-    <div class="hamburger" onclick="toggleMenu()"> ☰ Menu</div>
-    <nav id="navMenu" class="nav-menu">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+    <!-- Top Bar -->
+    <header class="top-bar">
+      <button class="nav-toggle">&#9776; Menu</button>
+      <h1 class="page-title">Contact Me</h1>
+      <nav class="nav-menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="info.html">My Background</a></li>
+          <li><a href="hobbies.html">Hobbies & Interests</a></li>
+          <li><a href="projects.html">Projects & Achievements</a></li>
+          <li><a href="contacts.html">Contacts</a></li>
+        </ul>
+      </nav>    
+    </header>
 
   <!-- Main Content Area -->
   <main class="contact-container">
@@ -44,12 +49,14 @@
       </footer>
     </body>
 
-  <script>
-    function toggleMenu() {
-      const menu = document.getElementById('navMenu');
-      menu.style.display = (menu.style.display === 'flex') ? 'none' : 'flex';
-    }
-  </script>
+    <script>
+      const toggleButton = document.querySelector('.nav-toggle');
+      const navMenu = document.querySelector('.nav-menu');
+    
+      toggleButton.addEventListener('click', () => {
+        navMenu.classList.toggle('active');
+      });
+    </script>
 </body>
 </html>
 
